@@ -274,7 +274,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zd-Hb-soW">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zd-Hb-soW">
                                                     <rect key="frame" x="16" y="14.5" width="46.5" height="14.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
@@ -341,12 +341,12 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="addressLabel" destination="6zd-Hb-soW" id="cpX-rG-SKf"/>
-                        <outlet property="categoryLabel" destination="Z5Z-vM-04U" id="VXY-Co-SaK"/>
-                        <outlet property="dateLabel" destination="VRK-6o-PP7" id="ayA-pj-mhf"/>
+                        <outlet property="addressLabel" destination="Jrg-5v-9lZ" id="gvS-1t-50Y"/>
+                        <outlet property="categoryLabel" destination="sLP-y4-gqi" id="Gub-XG-O3v"/>
+                        <outlet property="dateLabel" destination="jEQ-OY-XFy" id="Af0-Or-h0O"/>
                         <outlet property="descriptionTextView" destination="93h-Ee-DJf" id="J6A-hY-unG"/>
-                        <outlet property="latitudeLabel" destination="LSw-dj-Btq" id="mZm-wY-RZj"/>
-                        <outlet property="longitudeLabel" destination="Mfy-3l-QgI" id="aVC-dD-052"/>
+                        <outlet property="latitudeLabel" destination="3IM-GF-aaP" id="2pJ-j5-fxx"/>
+                        <outlet property="longitudeLabel" destination="Hc1-4f-5D1" id="4km-0i-1aj"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ijh-DS-WVC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
