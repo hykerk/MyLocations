@@ -258,6 +258,27 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f9f-KF-acU" id="19n-H7-nN4">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zd-Hb-soW">
+                                                    <rect key="frame" x="16" y="14.5" width="46.5" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jrg-5v-9lZ">
+                                                    <rect key="frame" x="326" y="14.5" width="33" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="6zd-Hb-soW" firstAttribute="centerY" secondItem="19n-H7-nN4" secondAttribute="centerY" id="3eF-sz-sGy"/>
+                                                <constraint firstItem="Jrg-5v-9lZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6zd-Hb-soW" secondAttribute="trailing" constant="8" id="AiO-py-vBb"/>
+                                                <constraint firstItem="Jrg-5v-9lZ" firstAttribute="centerY" secondItem="19n-H7-nN4" secondAttribute="centerY" id="EXj-c2-rI1"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Jrg-5v-9lZ" secondAttribute="trailing" id="KPl-y8-ZRS"/>
+                                                <constraint firstItem="6zd-Hb-soW" firstAttribute="leading" secondItem="19n-H7-nN4" secondAttribute="leadingMargin" id="MC0-fT-ihQ"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="VRK-6o-PP7" detailTextLabel="jEQ-OY-XFy" style="IBUITableViewCellStyleValue1" id="LOX-HZ-IrS">
