@@ -33,7 +33,13 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
             showLocationServicesDeniedAlert()
             return
         }
-        startLocationManager()
+        if updatingLocation {
+            stopLocationManager()
+        } else {
+            location = nil
+            lastLocationError = nil
+            startLocationManager()
+        }
         updateLabels()
     }
     
@@ -93,6 +99,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
             }
             messageLabel.text = statusMessage
         }
+        configureGetButton()
     }
     func stopLocationManager() {
         if updatingLocation {
@@ -109,6 +116,13 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
             updatingLocation = true
         }
     }
+    func configureGetButton() {
+        if updatingLocation {
+            getButton.setTitle("Stop", for: .normal)
+        } else {
+            getButton.setTitle("Get My Location", for: .normal)
+        }
+    }
     
     //MARK: - Helper Methods
     func showLocationServicesDeniedAlert() {
@@ -123,7 +137,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
         super.viewDidLoad()
         updateLabels()
     }
-
-
+    
+    
 }
 
