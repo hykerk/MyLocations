@@ -176,7 +176,18 @@
                             <outlet property="delegate" destination="w5g-Jf-tUL" id="f4l-pK-I0I"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="TagLocation" id="V9K-q1-fF2"/>
+                    <navigationItem key="navigationItem" title="TagLocation" id="V9K-q1-fF2">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="CgC-GI-8QP">
+                            <connections>
+                                <action selector="cancel" destination="w5g-Jf-tUL" id="jxX-kB-e1g"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="U1K-VC-1og">
+                            <connections>
+                                <action selector="done" destination="w5g-Jf-tUL" id="mvq-Lo-VdU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ijh-DS-WVC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
