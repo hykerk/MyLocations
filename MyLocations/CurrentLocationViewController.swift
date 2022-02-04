@@ -19,6 +19,8 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
     let locationManager = CLLocationManager()
     
     var location: CLLocation?
+    var updatingLocation = false
+    var lastLocationError: Error?
     
     //MARK: - Actions
     @IBAction func getLocation() {
@@ -39,6 +41,12 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
     //MARK: - CLLocationManagerDelegate
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("didFailWithError \(error.localizedDescription)")
+        if (error as NSError).code == CLError.locationUnknown.rawValue {
+            return
+        }
+        lastLocationError = error
+        stopLocationManager()
+        updateLabels()
     }
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let newLocation = locations.last!
