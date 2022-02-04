@@ -340,6 +340,14 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addressLabel" destination="6zd-Hb-soW" id="cpX-rG-SKf"/>
+                        <outlet property="categoryLabel" destination="Z5Z-vM-04U" id="VXY-Co-SaK"/>
+                        <outlet property="dateLabel" destination="VRK-6o-PP7" id="ayA-pj-mhf"/>
+                        <outlet property="descriptionTextView" destination="93h-Ee-DJf" id="J6A-hY-unG"/>
+                        <outlet property="latitudeLabel" destination="LSw-dj-Btq" id="mZm-wY-RZj"/>
+                        <outlet property="longitudeLabel" destination="Mfy-3l-QgI" id="aVC-dD-052"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ijh-DS-WVC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
