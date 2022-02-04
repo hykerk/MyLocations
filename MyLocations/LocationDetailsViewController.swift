@@ -9,6 +9,13 @@ import Foundation
 import UIKit
 import CoreLocation
 
+private let dateFormatter: DateFormatter = {
+    let formatter = DateFormatter()
+    formatter.dateStyle = .medium
+    formatter.timeStyle = .short
+    return formatter
+} ()
+
 class LocationDetailsViewController: UITableViewController {
     @IBOutlet var descriptionTextView: UITextView!
     @IBOutlet var categoryLabel: UILabel!
@@ -64,5 +71,8 @@ class LocationDetailsViewController: UITableViewController {
             text += tmp
         }
         return text
+    }
+    func format(date: Date) -> String {
+        return dateFormatter.string(from: date)
     }
 }
