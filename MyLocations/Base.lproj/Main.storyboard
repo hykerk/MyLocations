@@ -381,17 +381,17 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="JZK-O5-MVn" kind="unwind" identifier="PickedCategory" unwindAction="categoryPickerDidPickCategory:" id="MNI-3i-Gzx"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
-                        <connections>
-                            <outlet property="dataSource" destination="8SQ-mN-CRn" id="TqS-yD-PKn"/>
-                            <outlet property="delegate" destination="8SQ-mN-CRn" id="Wz7-fS-zOv"/>
-                        </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Rkc-Fm-9sO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gh1-89-ie4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="JZK-O5-MVn" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3001" y="51"/>
         </scene>
