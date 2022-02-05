@@ -17,6 +17,7 @@
 		19ED5DDA27ADD13A00628B2C /* LocationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED5DD927ADD13A00628B2C /* LocationDetailsViewController.swift */; };
 		19ED5DDC27ADE35E00628B2C /* CategoryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED5DDB27ADE35E00628B2C /* CategoryPickerViewController.swift */; };
 		19ED5DDE27AE029900628B2C /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED5DDD27AE029900628B2C /* HudView.swift */; };
+		19ED5DE027AE0F8B00628B2C /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED5DDF27AE0F8B00628B2C /* Functions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		19ED5DD927ADD13A00628B2C /* LocationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsViewController.swift; sourceTree = "<group>"; };
 		19ED5DDB27ADE35E00628B2C /* CategoryPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerViewController.swift; sourceTree = "<group>"; };
 		19ED5DDD27AE029900628B2C /* HudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
+		19ED5DDF27AE0F8B00628B2C /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				19ED5DD927ADD13A00628B2C /* LocationDetailsViewController.swift */,
 				19ED5DDB27ADE35E00628B2C /* CategoryPickerViewController.swift */,
 				19ED5DDD27AE029900628B2C /* HudView.swift */,
+				19ED5DDF27AE0F8B00628B2C /* Functions.swift */,
 			);
 			path = MyLocations;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				19ED5DDC27ADE35E00628B2C /* CategoryPickerViewController.swift in Sources */,
 				19DF3DE627AC818300C4F039 /* CurrentLocationViewController.swift in Sources */,
 				19DF3DE227AC818300C4F039 /* AppDelegate.swift in Sources */,
+				19ED5DE027AE0F8B00628B2C /* Functions.swift in Sources */,
 				19DF3DEC27AC818300C4F039 /* MyLocations.xcdatamodeld in Sources */,
 				19DF3DE427AC818300C4F039 /* SceneDelegate.swift in Sources */,
 				19ED5DDE27AE029900628B2C /* HudView.swift in Sources */,
