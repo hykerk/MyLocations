@@ -58,5 +58,9 @@ class HudView: UIView {
                 self.transform = CGAffineTransform.identity}, completion: nil)
             }
         }
+    func hide() {
+        superview?.isUserInteractionEnabled = true
+        removeFromSuperview()
     }
+}
 
