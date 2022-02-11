@@ -37,7 +37,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        guard let _ = (scene as? UIWindowScene) else { return }
+        let tabController = window!.rootViewController as! UITabBarController
+        if let tabViewControllers  = tabController.viewControllers {
+            let navController = tabViewControllers[0] as! UINavigationController
+            let controller  = navController.viewControllers.first as! CurrentLocationViewController
+            controller.managedObjectContext = managedObjectContext
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
