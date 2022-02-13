@@ -52,6 +52,8 @@ class LocationDetailsViewController: UITableViewController {
     
     var image: UIImage?
     
+    var observer: Any!
+    
     func show(image: UIImage) {
         imageView.image = image
         imageView.isHidden = false
@@ -60,12 +62,16 @@ class LocationDetailsViewController: UITableViewController {
         tableView.reloadData()
     }
     func listenForBackgroundNotification() {
-        NotificationCenter.default.addObserver(forName: UIScene.didEnterBackgroundNotification, object: nil, queue: OperationQueue.main) {_ in
+        observer = NotificationCenter.default.addObserver(forName: UIScene.didEnterBackgroundNotification, object: nil, queue: OperationQueue.main) {_ in
             if self.presentedViewController != nil {
                 self.dismiss(animated: false, completion: nil)
             }
             self.descriptionTextView.resignFirstResponder()
         }
+    }
+    deinit {
+        print("*** deinit \(self)")
+        NotificationCenter.default.removeObserver(observer!)
     }
 
     
