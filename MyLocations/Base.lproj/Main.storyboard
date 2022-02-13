@@ -443,24 +443,33 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOu-2u-JHb">
-                                            <rect key="frame" x="16" y="11" width="359" height="21"/>
+                                            <rect key="frame" x="76" y="11" width="299" height="21"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ddc-g4-LDW">
-                                            <rect key="frame" x="16" y="31" width="359" height="17"/>
+                                            <rect key="frame" x="76" y="31" width="299" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="usX-Ob-9W1">
+                                            <rect key="frame" x="16" y="6" width="52" height="52"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="52" id="7YZ-fS-uDg"/>
+                                                <constraint firstAttribute="height" constant="52" id="7rY-kc-lvI"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="Ddc-g4-LDW" firstAttribute="top" secondItem="5I8-z2-JUM" secondAttribute="top" constant="31" id="0JA-KU-wcU"/>
-                                        <constraint firstItem="iOu-2u-JHb" firstAttribute="leading" secondItem="5I8-z2-JUM" secondAttribute="leading" constant="16" id="3cB-9x-KxE"/>
+                                        <constraint firstItem="usX-Ob-9W1" firstAttribute="top" secondItem="5I8-z2-JUM" secondAttribute="top" constant="6" id="H6g-Mj-yN9"/>
                                         <constraint firstAttribute="bottom" secondItem="iOu-2u-JHb" secondAttribute="bottom" constant="33" id="Msn-mu-3sO"/>
                                         <constraint firstItem="iOu-2u-JHb" firstAttribute="top" secondItem="5I8-z2-JUM" secondAttribute="top" constant="11" id="R8g-4x-eIu"/>
-                                        <constraint firstItem="Ddc-g4-LDW" firstAttribute="leading" secondItem="5I8-z2-JUM" secondAttribute="leading" constant="16" id="l7x-GB-b28"/>
+                                        <constraint firstItem="usX-Ob-9W1" firstAttribute="leading" secondItem="5I8-z2-JUM" secondAttribute="leading" constant="16" id="bfv-se-Za3"/>
+                                        <constraint firstItem="iOu-2u-JHb" firstAttribute="leading" secondItem="usX-Ob-9W1" secondAttribute="trailing" constant="8" symbolic="YES" id="jjE-jV-Clb"/>
+                                        <constraint firstItem="Ddc-g4-LDW" firstAttribute="leading" secondItem="usX-Ob-9W1" secondAttribute="trailing" constant="8" symbolic="YES" id="klm-LM-bDU"/>
                                         <constraint firstAttribute="trailing" secondItem="iOu-2u-JHb" secondAttribute="trailing" id="qU8-TP-QuC"/>
                                         <constraint firstAttribute="trailing" secondItem="Ddc-g4-LDW" secondAttribute="trailing" id="qZ6-yC-FFH"/>
                                         <constraint firstAttribute="bottom" secondItem="Ddc-g4-LDW" secondAttribute="bottom" constant="17" id="uFh-Oh-IMp"/>
@@ -469,6 +478,7 @@
                                 <connections>
                                     <outlet property="addressLabel" destination="Ddc-g4-LDW" id="8IC-gW-F0H"/>
                                     <outlet property="descriptionLabel" destination="iOu-2u-JHb" id="XG9-J2-HzG"/>
+                                    <outlet property="photoImageView" destination="usX-Ob-9W1" id="8gz-Fm-U7p"/>
                                     <segue destination="w5g-Jf-tUL" kind="show" identifier="EditLocation" id="2od-fS-HC0"/>
                                 </connections>
                             </tableViewCell>
@@ -483,7 +493,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nPd-km-2Lu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1518" y="770"/>
+            <point key="canvasLocation" x="1517.5999999999999" y="769.56521739130437"/>
         </scene>
         <!--Map-->
         <scene sceneID="WJF-bM-GXB">
@@ -568,7 +578,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vLA-Yu-Ama"/>
+        <segue reference="2od-fS-HC0"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
