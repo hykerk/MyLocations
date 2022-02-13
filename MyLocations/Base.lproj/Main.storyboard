@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PgR-8Q-2WQ">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -411,7 +411,7 @@
         <scene sceneID="Mfs-mX-HB9">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="F88-Pr-GuI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Tag" id="4iz-Ru-R13"/>
+                    <tabBarItem key="tabBarItem" title="Tag" image="Tag" id="4iz-Ru-R13"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="d88-kJ-xWr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -544,7 +544,7 @@
         <scene sceneID="z1P-0S-Hwf">
             <objects>
                 <navigationController id="PXk-B7-IsB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Locations" id="nre-q0-YC5"/>
+                    <tabBarItem key="tabBarItem" title="Locations" image="Locations" id="nre-q0-YC5"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="LAT-Gb-xCC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -561,7 +561,7 @@
         <scene sceneID="rga-CM-BWo">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ekA-T5-uPs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Map" id="f7v-Oz-vPv"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="Map" id="f7v-Oz-vPv"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Bh-PI-vrH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -581,6 +581,9 @@
         <segue reference="2od-fS-HC0"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="Locations" width="30" height="30"/>
+        <image name="Map" width="30" height="30"/>
+        <image name="Tag" width="30" height="30"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
