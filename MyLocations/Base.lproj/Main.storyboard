@@ -358,6 +358,7 @@
                         <outlet property="categoryLabel" destination="sLP-y4-gqi" id="Gub-XG-O3v"/>
                         <outlet property="dateLabel" destination="jEQ-OY-XFy" id="Af0-Or-h0O"/>
                         <outlet property="descriptionTextView" destination="93h-Ee-DJf" id="J6A-hY-unG"/>
+                        <outlet property="imageHeight" destination="l7Y-rQ-lZT" id="ocb-s3-1oG"/>
                         <outlet property="imageView" destination="hH5-Hf-fxG" id="VLZ-1t-OAe"/>
                         <outlet property="latitudeLabel" destination="3IM-GF-aaP" id="2pJ-j5-fxx"/>
                         <outlet property="longitudeLabel" destination="Hc1-4f-5D1" id="4km-0i-1aj"/>
