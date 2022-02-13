@@ -59,6 +59,14 @@ class LocationDetailsViewController: UITableViewController {
         imageHeight.constant = 260
         tableView.reloadData()
     }
+    func listenForBackgroundNotification() {
+        NotificationCenter.default.addObserver(forName: UIScene.didEnterBackgroundNotification, object: nil, queue: OperationQueue.main) {_ in
+            if self.presentedViewController != nil {
+                self.dismiss(animated: false, completion: nil)
+            }
+            self.descriptionTextView.resignFirstResponder()
+        }
+    }
 
     
     //MARK: - Actions
@@ -121,6 +129,7 @@ class LocationDetailsViewController: UITableViewController {
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
         gestureRecognizer.cancelsTouchesInView = false
         tableView.addGestureRecognizer(gestureRecognizer)
+        listenForBackgroundNotification()
     }
     @objc func hideKeyboard(_ gestureRecognizer: UIGestureRecognizer) {
         let point = gestureRecognizer.location(in: tableView)
