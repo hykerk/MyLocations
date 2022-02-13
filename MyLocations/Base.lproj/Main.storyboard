@@ -513,11 +513,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="n9F-Hw-OD8" id="IEs-u7-zCH"/>
+                        <segue destination="w5g-Jf-tUL" kind="show" identifier="EditLocation" id="vLA-Yu-Ama"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bob-BV-TP1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3000.8000000000002" y="769.56521739130437"/>
+            <point key="canvasLocation" x="1518" y="1470"/>
         </scene>
         <!--Locations-->
         <scene sceneID="z1P-0S-Hwf">
@@ -553,11 +554,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6SH-qu-HQ7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2244" y="769.56521739130437"/>
+            <point key="canvasLocation" x="761" y="1471"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="2od-fS-HC0"/>
+        <segue reference="vLA-Yu-Ama"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
