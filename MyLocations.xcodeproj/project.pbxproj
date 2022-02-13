@@ -13,6 +13,7 @@
 		193D48FA27B778A5003BFDD7 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193D48F927B778A5003BFDD7 /* LocationCell.swift */; };
 		193D48FC27B8A519003BFDD7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193D48FB27B8A519003BFDD7 /* MapViewController.swift */; };
 		193D48FE27B8C7CA003BFDD7 /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193D48FD27B8C7CA003BFDD7 /* UIImage+Resize.swift */; };
+		193D490027B8C972003BFDD7 /* String+AddText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193D48FF27B8C972003BFDD7 /* String+AddText.swift */; };
 		19DF3DE227AC818300C4F039 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DF3DE127AC818300C4F039 /* AppDelegate.swift */; };
 		19DF3DE427AC818300C4F039 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DF3DE327AC818300C4F039 /* SceneDelegate.swift */; };
 		19DF3DE627AC818300C4F039 /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DF3DE527AC818300C4F039 /* CurrentLocationViewController.swift */; };
@@ -33,6 +34,7 @@
 		193D48F927B778A5003BFDD7 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		193D48FB27B8A519003BFDD7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		193D48FD27B8C7CA003BFDD7 /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
+		193D48FF27B8C972003BFDD7 /* String+AddText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+AddText.swift"; sourceTree = "<group>"; };
 		19DF3DDE27AC818300C4F039 /* MyLocations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLocations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19DF3DE127AC818300C4F039 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19DF3DE327AC818300C4F039 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				193D48F927B778A5003BFDD7 /* LocationCell.swift */,
 				193D48FB27B8A519003BFDD7 /* MapViewController.swift */,
 				193D48FD27B8C7CA003BFDD7 /* UIImage+Resize.swift */,
+				193D48FF27B8C972003BFDD7 /* String+AddText.swift */,
 			);
 			path = MyLocations;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				19DF3DEC27AC818300C4F039 /* MyLocations.xcdatamodeld in Sources */,
 				19DF3DE427AC818300C4F039 /* SceneDelegate.swift in Sources */,
 				193D48F327B5FFFA003BFDD7 /* Location+CoreDataClass.swift in Sources */,
+				193D490027B8C972003BFDD7 /* String+AddText.swift in Sources */,
 				19ED5DDE27AE029900628B2C /* HudView.swift in Sources */,
 				19ED5DDA27ADD13A00628B2C /* LocationDetailsViewController.swift in Sources */,
 			);
