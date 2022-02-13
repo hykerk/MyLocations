@@ -213,10 +213,17 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hH5-Hf-fxG">
+                                                    <rect key="frame" x="110" y="0.0" width="240" height="44"/>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="hH5-Hf-fxG" secondAttribute="trailing" constant="0.5" id="Cxr-VB-Vy3"/>
+                                                <constraint firstItem="hH5-Hf-fxG" firstAttribute="leading" secondItem="76c-24-Hyr" secondAttribute="trailing" constant="35" id="FtV-I0-kTH"/>
                                                 <constraint firstItem="76c-24-Hyr" firstAttribute="centerY" secondItem="5Gn-8F-mLu" secondAttribute="centerY" id="J9A-to-WLH"/>
                                                 <constraint firstItem="76c-24-Hyr" firstAttribute="leading" secondItem="5Gn-8F-mLu" secondAttribute="leadingMargin" id="h3z-1R-Uz8"/>
+                                                <constraint firstItem="hH5-Hf-fxG" firstAttribute="top" secondItem="5Gn-8F-mLu" secondAttribute="top" id="l7Y-rQ-lZT"/>
+                                                <constraint firstAttribute="bottom" secondItem="hH5-Hf-fxG" secondAttribute="bottom" constant="-0.5" id="wR1-it-sgT"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -346,10 +353,12 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="addPhotoLabel" destination="76c-24-Hyr" id="U2N-wA-u8H"/>
                         <outlet property="addressLabel" destination="Jrg-5v-9lZ" id="gvS-1t-50Y"/>
                         <outlet property="categoryLabel" destination="sLP-y4-gqi" id="Gub-XG-O3v"/>
                         <outlet property="dateLabel" destination="jEQ-OY-XFy" id="Af0-Or-h0O"/>
                         <outlet property="descriptionTextView" destination="93h-Ee-DJf" id="J6A-hY-unG"/>
+                        <outlet property="imageView" destination="hH5-Hf-fxG" id="VLZ-1t-OAe"/>
                         <outlet property="latitudeLabel" destination="3IM-GF-aaP" id="2pJ-j5-fxx"/>
                         <outlet property="longitudeLabel" destination="Hc1-4f-5D1" id="4km-0i-1aj"/>
                     </connections>

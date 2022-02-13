@@ -24,6 +24,8 @@ class LocationDetailsViewController: UITableViewController {
     @IBOutlet var longitudeLabel: UILabel!
     @IBOutlet var addressLabel: UILabel!
     @IBOutlet var dateLabel: UILabel!
+    @IBOutlet var imageView: UIImageView!
+    @IBOutlet var addPhotoLabel: UILabel!
     
     var coordinate = CLLocationCoordinate2D (latitude: 0, longitude: 0)
     var placemark: CLPlacemark?
@@ -45,6 +47,14 @@ class LocationDetailsViewController: UITableViewController {
                 placemark = location.placemark
             }
         }
+    }
+    
+    var image: UIImage?
+    
+    func show(image: UIImage) {
+        imageView.image = image
+        imageView.isHidden = false
+        addPhotoLabel.text = ""
     }
 
     
@@ -207,6 +217,10 @@ extension LocationDetailsViewController: UIImagePickerControllerDelegate, UINavi
     }
     //MARK: - Image picker delegates
     func imagePickerController(_ picker:UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
+        image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage
+        if let theImage = image {
+            show(image: theImage)
+        }
         dismiss(animated: true, completion: nil)
     }
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
